@@ -1,0 +1,45 @@
+settings =
+{
+    plugins =
+    {
+        ["plugin.zip"] =
+        {
+            publisherId = "com.coronalabs"
+        },
+    },      
+
+    android =
+    {
+        usesPermissions =
+        {
+            "android.permission.INTERNET",
+            "android.permission.ACCESS_FINE_LOCATION",
+            "android.permission.ACCESS_COARSE_LOCATION",
+        },
+        usesFeatures =
+        {
+            {name="android.hardware.location", required=false},
+            {name="android.hardware.location.gps", required=false},
+            {name="android.hardware.location.network", required=false}
+        },
+    },
+    iphone =
+    {
+        xcassets = "Images.xcassets",
+        plist =
+        {
+            UILaunchStoryboardName = "LaunchScreen",
+            UIFileSharingEnabled = true,
+            UIStatusBarHidden = true,
+            UIRequiredDeviceCapabilities={
+                accelerometer=true,
+                gyroscope=true,
+                magnetometer=true
+            },
+            ITSAppUsesNonExemptEncryption=false,
+            NSLocationAlwaysUsageDescription = "This app would like to use location services.",
+            NSLocationWhenInUseUsageDescription = "This app would like to use location services.",
+            NSMotionUsageDescription = "This app needs to log accelerometer data."
+        }
+    }
+}
