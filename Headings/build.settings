@@ -31,15 +31,9 @@ settings =
             UILaunchStoryboardName = "LaunchScreen",
             UIFileSharingEnabled = true,
             UIStatusBarHidden = true,
-            UIRequiredDeviceCapabilities={
-                accelerometer=true,
-                gyroscope=true,
-                magnetometer=true
-            },
             ITSAppUsesNonExemptEncryption=false,
-            NSLocationAlwaysUsageDescription = "This app would like to use location services.",
-            NSLocationWhenInUseUsageDescription = "This app would like to use location services.",
-            NSMotionUsageDescription = "This app needs to log accelerometer data."
+            NSMotionUsageDescription = "This app would like to access the accelerometer.",
+            NSLocationWhenInUseUsageDescription = "This app would like to access location services."
         }
     }
 }
